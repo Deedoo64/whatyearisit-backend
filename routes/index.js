@@ -7,8 +7,9 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/year", (req, res) => {
-  const date = new Date();
-  res.json({ year: date.getFullYear() });
+  const year = new Date().getFullYear();
+
+  res.json({ year: `${year}` });
 });
 
 module.exports = router;
