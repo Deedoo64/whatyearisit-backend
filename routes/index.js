@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express2" });
+  res.json({ toto: "esrdtfhgjkhgfdhjklmjhgf" });
+  // res.render("index", { title: "Express2" });
 });
 
 router.get("/year", (req, res) => {
